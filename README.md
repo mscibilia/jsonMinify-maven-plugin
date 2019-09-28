@@ -5,7 +5,7 @@ Example usage in pom.xml
 	<plugin>
 		<groupId>com.ms</groupId>
 		<artifactId>jsonMinify-maven-plugin</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0</version>
 		<configuration>
 			<srcDirectory>${project.basedir}\src\main\resources</srcDirectory>
 			<outputDirectory>${project.basedir}\target\project\WEB-INF\classes</outputDirectory>
