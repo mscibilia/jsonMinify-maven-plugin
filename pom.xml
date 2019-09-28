@@ -4,7 +4,7 @@
 
 	<groupId>com.ms</groupId>
 	<artifactId>jsonMinify-maven-plugin</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>maven-plugin</packaging>
 
 	<name>json-minify-plugin Maven Plugin</name>
