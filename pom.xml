@@ -9,8 +9,7 @@
 
 	<name>json-minify-plugin Maven Plugin</name>
 
-	<!-- FIXME change it to the project's website -->
-	<url></url>
+	<url>https://github.com/Scibs/jsonMinify-maven-plugin</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
