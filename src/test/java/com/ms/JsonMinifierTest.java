@@ -14,17 +14,19 @@ public class JsonMinifierTest {
 
 	private static final String SRC_DIR = "src/test/resources/";
 	private static final String OUTPUT_DIR = "target/test/";
+	private static final String EXPECTED_OUTPUT_FILE_PATH = OUTPUT_DIR.concat("testFile.json");
 	
 	@AfterClass
 	public static void tearDown() throws IOException {
-		Files.deleteIfExists(Paths.get(OUTPUT_DIR.concat("testFile.json")));
+		Files.deleteIfExists(Paths.get(EXPECTED_OUTPUT_FILE_PATH));
+		Files.deleteIfExists(Paths.get(OUTPUT_DIR));
 	}
 
 	@Test
 	public void shouldReadJsonFileThenMinifyThenWrite() throws IOException {
 		JsonMinifier.minifyJsonFilesInDir(SRC_DIR, OUTPUT_DIR);
 		
-		String result = new String(Files.readAllBytes(Paths.get(OUTPUT_DIR.concat("testFile.json"))));
+		String result = new String(Files.readAllBytes(Paths.get(EXPECTED_OUTPUT_FILE_PATH)));
 		
 		assertThat(result).isNotNull();
 		assertThat(result).hasLineCount(1);
