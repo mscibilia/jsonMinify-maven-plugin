@@ -46,8 +46,7 @@ public class JsonMinifier {
     
     private static String minifyJsonFile(Path jsonFilePath) throws IOException {
     	String jsonFileContent = new String(Files.readAllBytes(jsonFilePath));
-		return jsonFileContent.replaceAll("\n", "").replaceAll("\r", "").replaceAll("\t", "").replaceAll(",\\ +", ",")
-				.replaceAll(":\\ +", ":").replaceAll("\\{\\ +", "\\{").replaceAll("\\ +\\}", "\\}");
+		return jsonFileContent.replaceAll("\\s+(?=([^\"]*\"[^\"]*\")*[^\"]*$)", "");
     }
     
     private static void writeMinifiedJsonFilesToDest(String destFileName, String content) throws IOException	{
