@@ -34,7 +34,7 @@ public class JsonMinifier {
 	}
 
 	private static String sanitiseDestDirPathName(String destDirPathName) {
-		String result = "";
+		String result = destDirPathName;
 		if(destDirPathName.contains("/") && !destDirPathName.endsWith("/"))	{
 			result = destDirPathName.concat("/");
 		} else if(destDirPathName.contains("\\") && !destDirPathName.endsWith("\\"))	{
