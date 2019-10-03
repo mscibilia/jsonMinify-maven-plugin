@@ -9,7 +9,7 @@
 
 	<name>json-minify-plugin Maven Plugin</name>
 
-	<url>https://github.com/Scibs/jsonMinify-maven-plugin</url>
+	<url>https://github.com/mscibilia/jsonMinify-maven-plugin</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
